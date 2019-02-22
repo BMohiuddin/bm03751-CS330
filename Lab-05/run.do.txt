@@ -1,0 +1,10 @@
+vlog tb.v ALU_1_bit.v
+vsim -novopt work.tb
+add wave \
+{sim:/tb/a } \
+{sim:/tb/b } \
+{sim:/tb/CarryIn } \
+{sim:/tb/ALUOp } \
+{sim:/tb/Result } \
+{sim:/tb/CarryOut } 
+run 1600ns
